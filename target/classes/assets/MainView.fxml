@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainViewController">
+    <children>
+       <AnchorPane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #AAAABB;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="32.0" text="Encryptation Tool" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+         </children>
+       </AnchorPane>
+      <HBox alignment="CENTER" layoutX="300.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="encryptButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="230.0" text="Encrypt a File" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="336.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0">
+         <children>
+            <Button fx:id="decryptButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="230.0" text="Decrypt a File" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="455.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0">
+         <children>
+            <Button fx:id="keyButton" mnemonicParsing="false" prefHeight="21.0" prefWidth="141.0" text="Generate Keys" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+    </children>
+ </AnchorPane>
