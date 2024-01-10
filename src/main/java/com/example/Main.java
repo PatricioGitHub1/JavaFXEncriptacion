@@ -26,6 +26,7 @@ public class Main extends Application {
         UtilsViews.addView(getClass(), "View0", "/assets/MainView.fxml");
         UtilsViews.addView(getClass(), "ViewDecrypt", "/assets/DecryptView.fxml");
         UtilsViews.addView(getClass(), "ViewEncrypt", "/assets/EncryptView.fxml");
+        UtilsViews.addView(getClass(), "ViewResult", "/assets/ResultView.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
         

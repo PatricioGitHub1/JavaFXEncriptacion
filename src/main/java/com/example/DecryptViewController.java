@@ -56,5 +56,11 @@ public class DecryptViewController {
     @FXML
     public void decryptFiles() {
         System.out.println("decrypt with password:["+passwordField.getText()+"]");
+        boolean result = appData.fileDecryption(privateKeyFile, selectedFile, targetFile, passwordField.getText());
+        
+        ResultViewController resultViewController = (ResultViewController) UtilsViews.getController("ViewResult");
+        resultViewController.updateStatusLabel(result);
+
+        UtilsViews.setViewAnimating("ViewResult");
     }
 }
